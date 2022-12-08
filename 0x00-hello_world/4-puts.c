@@ -1,26 +1,25 @@
-
 #include <stdio.h>
 
 /**
  *
- *    * main - print to screen
+ *  *main - print the string into the output
  *
- *       *
+ *   *
  *
- *          * Return: zero
+ *    *Using the main function
  *
- *             */
+ *     *this program prints out "Programming is like building a multilingual puzzle
+ *
+ *      *Return: 0;
+ *
+ *       */
 
 int main(void)
 
 {
 
-		char Mystr[] = "\"Programming is like building a multilingual puzzle";
+	puts("\"Programming is like building a multilingual puzzle");
 
-
-
-			puts(Mystr);
-
-				return (0);
+	return (0);
 
 }
