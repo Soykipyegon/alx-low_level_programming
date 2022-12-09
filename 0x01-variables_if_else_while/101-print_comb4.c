@@ -19,8 +19,7 @@ while (y < 58)
 {
 putchar(i);
 putchar(j);
-putchar(y);
- 
+putchar(y); 
 if (i != 55 || j != 56 || y != 57)
 {
 putchar(',');
