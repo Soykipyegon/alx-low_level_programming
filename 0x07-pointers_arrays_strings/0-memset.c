@@ -1,29 +1,18 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings,
- *
- * @dest: destination.
- * @src: source.
- * Return: the pointer to dest.
- *
+ * *_memset - copies a character to the firstn characters of the string pointer
+ *@s: original string
+ *@b: value to remplace
+ *@n: number of bytes
+ *Return: s (string modify)
  */
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 {
-int count = 0, count2 = 0;
+unsigned int i;
 
-while (*(dest + count) != '\0')
+for (i = 0; i < n; i++)
 {
-count++;
+s[i] = b;
 }
-
-while (count2 >= 0)
-{
-*(dest + count) = *(src + count2);
-if (*(src + count2) == '\0')
-break;
-count++;
-count2++;
+return (s);
 }
-return (dest);
-}
-

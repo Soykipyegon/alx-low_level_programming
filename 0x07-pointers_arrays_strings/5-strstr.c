@@ -1,22 +1,28 @@
 #include "main.h"
 /**
- * string_toupper - changes all lowercase letters of a string
- * to uppercase
- * @s: input string.
- *
- * Return: the pointer to dest.
+ * *_strstr - locates a substring
+ *@haystack: string to be scanned
+ *@needle: string to be searced
+ *Return: pointer of the first occurrence
  */
-
-char *string_toupper(char *s)
+char *_strstr(char *haystack, char *needle)
 {
-int count = 0;
+int i, j, b;
 
-while (*(s + count) != '\0')
+i = 0;
+while (haystack[i] != '\0')
 {
-if (((s + count) >= 97) && ((s + count) <= 122))
-*(s + count) = *(s + count) - 32;
-count++;
+j = 0;
+b = i;
+while (haystack[i] == needle[j] && haystack[i] != '\0'
+&& needle[j] != '\0')
+{
+i++;
+j++;
 }
-
-return (s);
+if (needle[j] == '\0')
+return (haystack + b);
+i = b + 1;
+}
+return ('\0');
 }

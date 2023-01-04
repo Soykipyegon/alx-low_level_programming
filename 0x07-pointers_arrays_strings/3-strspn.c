@@ -1,22 +1,30 @@
-#include "main.h"
+#include "include].h"
 /**
- * _strcmp - compares two strings
- * @s1: first string.
- * @s2: second string.
- * Return: 0 if s1 and s2 are equals,
- * another number if not.
- *
+ * _strspn - gets the length of a prefix substring
+ *@s: string to scan
+ *@accept: string containing the character to match
+ *Return: the number of characters in the initial segment of s
  */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
-int i;
+unsigned int c = 0;
+int i, j, h;
 
-for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
-if (s1[i] != s2[i])
+h = 0;
+for (j = 0; accept[j] != '\0'; j++)
 {
-return (s1[i] - s2[i]);
+if (s[i] == accept[j])
+{
+h = 1;
 }
 }
-return (0);
+if (h == 0)
+{
+break;
+}
+c++;
+}
+return (c);
 }
