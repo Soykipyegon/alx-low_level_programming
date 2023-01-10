@@ -45,7 +45,7 @@ l2 = _strlen(s2);
 /**assign memory*/
 /**increments l2 for the null character*/
 l2++;
-concat = malloc((l1 + l2) * sizeof(*concat));
+concat = malloc((l1 + l2) *sizeof(*concat));
 
 /**verify if memory fails*/
 if (concat == NULL)
