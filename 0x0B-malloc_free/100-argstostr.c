@@ -25,7 +25,7 @@ c++;
 }
 
 c++;
-str = malloc(c * sizeof(char));
+str = malloc(c *sizeof(char));
 
 beg = str;
 
