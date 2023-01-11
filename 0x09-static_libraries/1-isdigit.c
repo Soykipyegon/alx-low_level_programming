@@ -1,7 +1,7 @@
 /**
  * _isdigit - checks if int is digit or not
  *
- * @c: int c, represents a char 
+ * @c: int c, represents a char
  *
  * Return: 1 if c is digit, 0 otherwise
  */
