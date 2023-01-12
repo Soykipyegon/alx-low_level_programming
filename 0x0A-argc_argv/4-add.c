@@ -20,12 +20,19 @@ return (0);
 }
 while (argc-- && argc > 0)
 {
-										for (i = 0; argv[argc][i] != '\0'; i++)
+
+for (i = 0; argv[argc][i] != '\0'; i++)
 {
-										if (!(isdigit(argv[argc][i])))
-{										printf("Error\n");
-return (1);									}
-}										num = atoi(argv[argc]);								sum += num;
+
+if (!(isdigit(argv[argc][i])))
+{
+
+printf("Error\n");
+return (1);
+}
+}
+num = atoi(argv[argc]);
+sum += num;
 }
 printf("%d\n", sum);
 return (sum);
