@@ -1,7 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+
 /**
  * main - program that calculates 2 numbers
  *@argc: argument counter

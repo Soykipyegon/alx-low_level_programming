@@ -1,6 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * get_op_func - select the correct operation
  *@s: operator
@@ -18,9 +17,11 @@ op_t ops[] = {
 };
 int i;
 
-while (i < 5)
+i = 0;
+
+while (ops[i].op)
 {
-if (*(ops[i]).op == *s && *(s + 1) == '\0')
+if (strcmp(ops[i].op,s) == 0)
 return (ops[i].f);
 i++;
 }
