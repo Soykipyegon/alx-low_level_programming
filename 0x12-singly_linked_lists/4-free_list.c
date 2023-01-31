@@ -22,13 +22,11 @@ return (len);
 */
 char *_strdup(const char *str)
 {
-
 char *cp;
 unsigned int i, j;
 
 if (str == NULL)
 return (NULL);
-
 i = _strlen(str);
 cp = malloc(i *sizeof(char));
 
@@ -39,7 +37,6 @@ return (NULL);
 
 for (j = 0; j < i; j++)
 {
-
 cp[j] = str[j];
 }
 
@@ -86,7 +83,6 @@ return (NULL);
 
 if (*head == NULL)
 {
-
 *head = end;
 return (*head);
 }
