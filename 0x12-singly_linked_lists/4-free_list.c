@@ -30,7 +30,7 @@ if (str == NULL)
 return (NULL);
 
 i = _strlen(str);
-cp = malloc(i * sizeof(char));
+cp = malloc(i *sizeof(char));
 
 if (cp == NULL)
 {
