@@ -29,7 +29,7 @@ unsigned int i;
 if (str == NULL)
 return (NULL);
 len = _strlen(str);
-cp = malloc(len * sizeof(char));
+cp = malloc(len *sizeof(char));
 
 if (cp == NULL)
 {
